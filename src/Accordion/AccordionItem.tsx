@@ -17,7 +17,7 @@ import useMergeState from 'use-merge-value';
 
 import Block from '@/Block';
 import { Flexbox } from '@/Flex';
-import { type MotionComponentType, useMotionComponent } from '@/MotionProvider';
+import { type MotionComponentType, useOptionalMotionComponent } from '@/MotionProvider';
 import Text from '@/Text';
 import { stopPropagation } from '@/utils/dom';
 
@@ -95,7 +95,17 @@ const AccordionMotionContent = memo<AccordionMotionContentProps>(
     isOpen,
     skipInitialAnimation,
   }) => {
-    const Motion = useMotionComponent();
+    const Motion = useOptionalMotionComponent();
+
+    if (!Motion) {
+      if (!isOpen) return null;
+
+      return (
+        <div className={className} role="region" style={style}>
+          <div className={contentInnerClassName}>{children}</div>
+        </div>
+      );
+    }
 
     const motionProps = useMemo(
       () => ({
