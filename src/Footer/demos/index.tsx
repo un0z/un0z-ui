@@ -6,20 +6,14 @@ const columns: FooterProps['columns'] = [
       {
         description: 'AIGC Components',
         openExternal: true,
-        title: '🤯 Lobe UI',
-        url: 'https://github.com/lobehub/lobe-ui',
+        title: 'Un0z UI',
+        url: 'https://github.com/un0z/un0z-ui',
       },
       {
         description: 'Chatbot Client',
         openExternal: true,
-        title: '🤯 Lobe Chat',
-        url: 'https://github.com/lobehub/lobe-chat',
-      },
-      {
-        description: 'Node Flow Editor',
-        openExternal: true,
-        title: '🤯 Lobe Flow',
-        url: 'https://github.com/lobehub/lobe-flow',
+        title: 'Un0z Chat',
+        url: 'https://github.com/un0z/un0z-core/tree/main/src',
       },
     ],
     title: 'Resources',
@@ -27,16 +21,10 @@ const columns: FooterProps['columns'] = [
   {
     items: [
       {
-        description: 'AI Commit CLI',
+        description: 'Vega AI',
         openExternal: true,
-        title: '💌 Lobe Commit',
-        url: 'https://github.com/lobehub/lobe-commit',
-      },
-      {
-        description: 'Lint Config',
-        openExternal: true,
-        title: '📐 Lobe Lint',
-        url: 'https://github.com/lobehub/lobe-lint',
+        title: 'Vega AI',
+        url: 'https://github.com/un0z/vega-ai',
       },
     ],
     title: 'More Products',
@@ -44,5 +32,5 @@ const columns: FooterProps['columns'] = [
 ];
 
 export default () => {
-  return <Footer bottom="Copyright © 2022" columns={columns} />;
+  return <Footer bottom="Copyright © 2026 Un0z" columns={columns} />;
 };

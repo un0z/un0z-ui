@@ -75,6 +75,7 @@ const themeConfig: SiteThemeConfig = {
         'https://repository-images.githubusercontent.com/643435168/789cab53-cae5-43fa-965d-5928c3c63c1c',
     },
   },
+  logo: '/un0z-brand-assets/Icon_un0z.svg',
   name: 'Un0z UI',
   nav,
   prefersColor: {
