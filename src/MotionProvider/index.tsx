@@ -24,3 +24,8 @@ export const useMotionComponent = (): MotionComponentType => {
   }
   return context;
 };
+
+export const useOptionalMotionComponent = (): MotionComponentType | undefined => {
+  const context = use(MotionComponent);
+  return context || undefined;
+};
