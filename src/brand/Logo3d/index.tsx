@@ -1,7 +1,7 @@
 'use client';
 
 import type { ImageProps } from 'antd';
-import { useThemeMode } from 'antd-style';
+import { cssVar } from 'antd-style';
 import { type FC } from 'react';
 
 import Un0zIcon from '@/brand/Un0zIcon';
@@ -12,14 +12,12 @@ type Logo3dProps = Omit<ImgProps & ImageProps, 'width' | 'height' | 'src'> & {
 };
 
 const Logo3d: FC<Logo3dProps> = ({ size = '1em', style, alt = 'Un0z', ...rest }) => {
-  const { isDarkMode } = useThemeMode();
-
   return (
     <Un0zIcon
       aria-label={alt}
       role={'img'}
       size={size}
-      style={{ color: isDarkMode ? '#25241F' : '#EDECEC', ...style }}
+      style={{ color: cssVar.colorText, transition: 'color 180ms ease', ...style }}
       {...(rest as any)}
     />
   );
