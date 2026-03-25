@@ -1,0 +1,99 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    "declaration": true,
+    "downlevelIteration": true,
+    "esModuleInterop": true,
+    "jsx": "react-jsx",
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ],
+    "module": "esnext",
+    "moduleResolution": "bundler",
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "target": "es6",
+    "types": [
+      "vitest/globals"
+    ],
+    "paths": {
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "@/*": [
+        "src/*"
+      ],
+      "@un0z/ui": [
+        "src"
+      ],
+      "@un0z/ui/*": [
+        "src/*"
+      ],
+      "@un0z/ui/mdx": [
+        "src/mdx"
+      ],
+      "@un0z/ui/mdx/*": [
+        "src/mdx/*"
+      ],
+      "@un0z/ui/brand": [
+        "src/brand"
+      ],
+      "@un0z/ui/brand/*": [
+        "src/brand/*"
+      ],
+      "@un0z/ui/mobile": [
+        "src/mobile"
+      ],
+      "@un0z/ui/mobile/*": [
+        "src/mobile/*"
+      ],
+      "@un0z/ui/chat": [
+        "src/chat"
+      ],
+      "@un0z/ui/chat/*": [
+        "src/chat/*"
+      ],
+      "@un0z/ui/storybook": [
+        "src/storybook"
+      ],
+      "@un0z/ui/storybook/*": [
+        "src/storybook/*"
+      ],
+      "@un0z/ui/awesome": [
+        "src/awesome"
+      ],
+      "@un0z/ui/awesome/*": [
+        "src/awesome/*"
+      ],
+      "@un0z/ui/color": [
+        "src/color"
+      ],
+      "@un0z/ui/color/*": [
+        "src/color/*"
+      ],
+      "@un0z/ui/icons": [
+        "src/icons"
+      ],
+      "@un0z/ui/icons/*": [
+        "src/icons/*"
+      ],
+      "@un0z/ui/base-ui": [
+        "src/base-ui"
+      ],
+      "@un0z/ui/base-ui/*": [
+        "src/base-ui/*"
+      ]
+    }
+  },
+  "exclude": [],
+  "include": [
+    "src",
+    "docs",
+    "tests",
+    ".dumirc.ts",
+    ".fatherrc.ts"
+  ]
+}
