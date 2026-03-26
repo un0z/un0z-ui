@@ -1,6 +1,6 @@
 {
   "name": "@un0z/ui",
-  "version": "5.5.0",
+  "version": "1.0.0",
   "description": "UI component library for building AIGC web apps",
   "keywords": [
     "un0z",
@@ -9,14 +9,15 @@
     "react components",
     "react ui"
   ],
-  "homepage": "https://github.com/un0z/ui",
+  "homepage": "https://github.com/un0z/un0z-ui",
   "bugs": {
-    "url": "https://github.com/un0z/ui/issues/new"
+    "url": "https://github.com/un0z/un0z-ui/issues/new"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/un0z/ui.git"
+    "url": "git+https://github.com/un0z/un0z-ui.git"
   },
+  "license": "ISC",
   "author": "Un0z <i@un0z.com>",
   "sideEffects": [
     "**/*.css"
@@ -84,6 +85,10 @@
   "main": "es/index.mjs",
   "module": "es/index.mjs",
   "types": "es/index.d.mts",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
   "files": [
     "es"
   ],
