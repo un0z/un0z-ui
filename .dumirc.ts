@@ -51,7 +51,7 @@ const themeConfig: SiteThemeConfig = {
   ],
   analytics: {
     plausible: {
-      domain: 'ui.lobehub.com',
+      domain: 'ui.un0z.com',
       scriptBaseUrl: 'https://plausible.lobehub-inc.cn',
     },
   },
@@ -65,7 +65,7 @@ const themeConfig: SiteThemeConfig = {
   giscus: {
     category: 'Q&A',
     categoryId: 'DIC_kwDOJloKoM4CXsCu',
-    repo: 'lobehub/lobe-ui',
+    repo: 'un0z/un0z-ui',
     repoId: 'R_kgDOJloKoA',
   },
   lastUpdated: true,
@@ -83,7 +83,6 @@ const themeConfig: SiteThemeConfig = {
     switch: false,
   },
   socialLinks: {
-    discord: 'https://discord.gg/AYFPHvv2jT',
     github: homepage,
   },
   title: 'Un0z UI',
